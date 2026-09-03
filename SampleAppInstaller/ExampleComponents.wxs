@@ -1,0 +1,18 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="$(var.SampleApp.TargetPath)" />
+			</Component>
+			<Component>
+				<File Source="$(var.SampleApp.TargetDir)SampleApp.exe" />
+			</Component>
+			<Component>
+				<File Source="$(var.SampleApp.TargetDir)SampleApp.runtimeconfig.json" />
+			</Component>
+			<Component>
+				<File Source="$(var.SampleApp.TargetDir)SampleApp.deps.json" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

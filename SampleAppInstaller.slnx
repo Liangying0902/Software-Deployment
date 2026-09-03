@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../MyFirstAppInstaller/MyFirstAppInstaller.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="d97cb6d5-5167-45ff-8c12-b9e245f6dd68">
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+  <Project Path="MyFirstApp/MyFirstApp.csproj" Id="0b45dbe0-31d9-4ad3-88a6-7849ecde5139" />
+  <Project Path="MyLibrary/MyLibrary.csproj" Id="27b75847-9ffd-45c4-9efe-6055b9382895" />
+  <Project Path="SampleApp/SampleApp.csproj" />
+  <Project Path="SampleAppInstaller/SampleAppInstaller.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0">
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+</Solution>
